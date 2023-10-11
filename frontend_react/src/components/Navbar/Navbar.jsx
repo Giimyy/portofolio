@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HiMenuAlt4, HiX } from "react-icons/hi/index";
+import { HiX } from "react-icons/hi/index";
 import { motion } from "framer-motion";
 
 import { images } from "../../constants";
