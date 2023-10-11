@@ -9,9 +9,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="app__navbar">
-      <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+    <nav className={"app__navbar"}>
+      <div className={`app__navbar-logo ${toggle ? "hidden" : ""}`}>
+        <img src={images.logosvg} alt="logo" />
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map((item) => (
@@ -23,18 +23,43 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        <img
+          className="menu-icon"
+          src={images.menu}
+          onClick={() => {
+            setToggle(true);
+            document.querySelector(".menu-icon").style.opacity = 0;
+            document.querySelector(".app__navbar-logo").classList.add("hidden");
+          }}
+        />
 
         {toggle && (
           <motion.div
-            whileInView={{ x: [300, 0] }}
-            transition={{ duration: 0.85, ease: "easeOut" }}
+            whileInView={{ y: [-500, 0] }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <HiX onClick={() => setToggle(false)} />
+            <HiX
+              onClick={() => {
+                setToggle(false);
+                document.querySelector(".menu-icon").style.opacity = 1;
+                document
+                  .querySelector(".app__navbar-logo")
+                  .classList.remove("hidden");
+              }}
+            />
             <ul>
               {["home", "about", "work", "skills", "contact"].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                  <a
+                    href={`#${item}`}
+                    onClick={() => {
+                      setToggle(false);
+                      document.querySelector(".menu-icon").style.opacity = 1;
+                      document
+                        .querySelector(".app__navbar-logo")
+                        .classList.remove("hidden");
+                    }}
+                  >
                     {item}
                   </a>
                 </li>
