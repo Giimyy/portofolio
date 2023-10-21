@@ -17,12 +17,11 @@ import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
-import about01 from "../assets/about01.png";
-import about02 from "../assets/about02.png";
-import about03 from "../assets/about03.png";
-import about04 from "../assets/about04.png";
+import about01 from "../assets/about01.jpg";
+import about02 from "../assets/about02.jpg";
+import about03 from "../assets/about03.jpg";
+import about04 from "../assets/about04.jpg";
 
-import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
 import logosvg from "../assets/logo.svg";
@@ -63,7 +62,6 @@ export default {
   about02,
   about03,
   about04,
-  profile,
   circle,
   logo,
   logosvg,
