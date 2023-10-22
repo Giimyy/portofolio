@@ -17,10 +17,11 @@ import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
-import about01 from "../assets/about01.jpg";
+import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.jpg";
-import about03 from "../assets/about03.jpg";
-import about04 from "../assets/about04.jpg";
+import about03 from "../assets/about03.png";
+import about04 from "../assets/about04.png";
+import tailwind from "../assets/tailwind.svg";
 
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
@@ -37,6 +38,7 @@ import menu from "../assets/menu-outline.svg";
 import pro from "../assets/pro.png";
 
 export default {
+  tailwind,
   pro,
   menu,
   email,

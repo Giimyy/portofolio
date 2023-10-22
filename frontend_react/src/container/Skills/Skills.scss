@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.distance {
+  margin-top: 4rem;
+}
+
 .app__skills-container {
   width: 80%;
   margin-top: 3rem;
@@ -140,7 +144,7 @@
 .skills-tooltip {
   max-width: 300px !important;
   background-color: var(--white-color) !important;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05) !important;
   border-radius: 5px !important;
   padding: 1rem !important;
   color: var(--gray-color) !important;
